@@ -1,0 +1,24 @@
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(230,57,70,.16), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(182,242,58,.07), transparent 45%),
+    #0b0b0c;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.petal {
+  position: fixed;
+  top: -30px;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #efdcc3, #e63946);
+  border-radius: 100% 0 100% 0;
+  opacity: .65;
+  pointer-events: none;
+  z-index: 0;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to { transform: translate(80px, 110vh) rotate(540deg); }
+}
